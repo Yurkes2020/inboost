@@ -7,6 +7,7 @@ export const SideBar = ({ note }) => {
 
   const showNote = (id) => {
     note(id);
+    console.log(this);
   };
 
   return (
@@ -16,7 +17,7 @@ export const SideBar = ({ note }) => {
           user.map(({ values, id }) => {
             return (
               <Item onClick={() => showNote(id)} key={id}>
-                {values.c_fgBcH8nlqyogE2_dRhrl}
+                {values.b3W5vewSjiW5f0WOddHNOk}
               </Item>
             );
           })}

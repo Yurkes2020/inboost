@@ -14,7 +14,7 @@ const App = () => {
     const fetch = async () => {
       return await axios
         .get(
-          'https://quintadb.com.ua/apps/colSkGAKHoWRzyrCo5zmo2/dtypes/entity/c2ugVcUgXhtiostSk7tSo_.json?rest_api_key=c3WRZdOSjjWO3dUmoiWOOr&amp;view='
+          'https://quintadb.com/apps/ddS8knnSnoW7VdJbXFuZvS/dtypes/entity/aBFIjygHTcKQG6FIFcUSkt.json?rest_api_key=dcU8ogf8nngjWFW6pdLmkF&amp'
         )
         .then((responce) => setData(responce.data.records));
     };

@@ -11,4 +11,5 @@ export const Aside = styled.aside`
 export const Item = styled.li`
   border-bottom: 1px solid black;
   padding: 10px;
+  cursor: pointer;
 `;
