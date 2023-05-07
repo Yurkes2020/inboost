@@ -1,14 +1,25 @@
-import { Aside } from './SideBar.styled';
+import { useContext } from 'react';
+import { Aside, Item } from './SideBar.styled';
+import { Context } from '../../App';
 
-export const SideBar = () => {
+export const SideBar = ({ note }) => {
+  const user = useContext(Context);
+
+  const showNote = (id) => {
+    note(id);
+  };
+
   return (
     <Aside>
       <ul>
-        <li>ersdff</li>
-        <li>sdfsdf</li>
-        <li>sdfsdf</li>
-        <li>sdfsdf</li>
-        <li>sdfsdfs</li>
+        {user &&
+          user.map(({ values, id }) => {
+            return (
+              <Item onClick={() => showNote(id)} key={id}>
+                {values.c_fgBcH8nlqyogE2_dRhrl}
+              </Item>
+            );
+          })}
       </ul>
     </Aside>
   );

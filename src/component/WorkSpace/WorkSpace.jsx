@@ -1,9 +1,16 @@
 import { Main } from './WorkSpace.styled';
+import { useContext } from 'react';
 
-export const WorkSpace = () => {
+import { Context } from '../../App';
+
+export const WorkSpace = ({ idNote }) => {
+  const user = useContext(Context);
+
+  const note = user.find((item) => item.id === idNote);
+  console.log(note);
   return (
     <Main>
-      <p>dfghfhsfdgdfgvdsbfbsdfvbdsfvdsfgdsgdsfgsdfgsdfgdfdsfg</p>
+      <p>{note}</p>
     </Main>
   );
 };

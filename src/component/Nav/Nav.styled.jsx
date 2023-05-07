@@ -9,6 +9,7 @@ export const Header = styled.header`
 export const List = styled.ul`
   display: flex;
   flex-grow: 1;
+  margin-left: 20px;
 `;
 
 export const Search = styled.input`
